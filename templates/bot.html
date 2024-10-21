@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Management Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bot.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <!-- Chatbot icon as an image button -->
+        <img id="chatbot-icon" class="chatbot-button" src="{{ url_for('static', filename='bot.png') }}" alt="Chatbot" />
+
+        <!-- Chatbox Popup -->
+        <div id="chat-popup" class="chat-popup hidden">
+            <div class="chat-header">
+                <h3>Chatbot</h3>
+                <button id="close-btn">✖</button>
+            </div>
+
+            <div class="chat-body">
+                <div id="chat-history"></div>
+                <select id="question-select">
+                    <option value="">Select a question...</option>
+                    <option value="How do I apply to Christ University?">How do I apply to Christ University?</option>
+                    <option value="What is the eligibility for the B.Sc. Computer Science course?">What is the eligibility for the B.Sc. Computer Science course?</option>
+                    <option value="What are the available scholarships?">What are the available scholarships?</option>
+                    <option value="How do I access the student portal?">How do I access the student portal?</option>
+                    <option value="What is the contact email for admissions?">What is the contact email for admissions?</option>
+                </select>
+                <button id="ask-btn">Ask</button>
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='bot.js') }}"></script>
+</body>
+</html>

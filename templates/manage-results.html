@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bot.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>About Christ University</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgba(43, 35, 24, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #908282;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        nav img {
+            max-height: 50px;
+            margin-left: 20px;
+        }
+
+        .maps-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .step-container {
+            width: 23%;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .step-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .step:nth-child(1) {
+            background-color: #D1C4E9; /* Light purple */
+        }
+
+        .step:nth-child(2) {
+            background-color: #FFCCBC; /* Light orange */
+        }
+
+        .step:nth-child(3) {
+            background-color: #FFE0B2; /* Light peach */
+        }
+
+        .step:nth-child(4) {
+            background-color: #FFAB91; /* Light coral */
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Logo on the left -->
+        <img src="static/images/logoeduman_bg.png" alt="Logo">
+
+        <!-- Navigation links on the right -->
+        <ul>
+            <li><a href="/index2">Home</a></li>
+            <li><a href="/manage-results">About</a></li>
+            <li><a href="/admissions">Admissions</a></li>
+            <li><a href="/scholarship">Scholarship</a></li>
+            <li><a href="/examination">Examination</a></li>
+            <li><a href="/login">Results</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>About Christ University</h1>
+        <p>Christ University, known for its commitment to providing holistic education, offers various courses across different streams. It has four main campuses located in Bangalore, each offering unique facilities and a wide range of academic programs to cater to the diverse needs of students.</p>
+
+        <div class="content-box">
+            <h2>Christ University Bangalore Branches</h2>
+            <p>Below are the four main Christ University campuses in Bangalore:</p>
+
+            <div class="maps-container">
+                <!-- Map for Christ University, Main Campus -->
+                <div class="step-container step">
+                    <h3>Main Campus, Hosur Road</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62252.56434037864!2d77.56705830394324!3d12.9343142247795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15dff8f1c079%3A0xa3eb04fd7e7b68b9!2sChrist%20University%20Main%20Campus!5e0!3m2!1sen!2sin!4v1601971953896!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+                </div>
+
+                <!-- Map for Christ University, Bannerghatta Road Campus -->
+                <div class="step-container step">
+                    <h3>Bannerghatta Road Campus</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62252.56434037864!2d77.56295880394324!3d12.8912635247795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1446572b4e91%3A0xa09e3b6cc8f14f0f!2sChrist%20University%20Bannerghatta%20Campus!5e0!3m2!1sen!2sin!4v1601972243087!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+                </div>
+
+                <!-- Map for Christ University, Kengeri Campus -->
+                <div class="step-container step">
+                    <h3>Kengeri Campus</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62252.56434037864!2d77.49355830394324!3d12.8666145247795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148c8b3a85b9%3A0x923db5a4e51226e6!2sChrist%20University%20Kengeri%20Campus!5e0!3m2!1sen!2sin!4v1601972243124!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+                </div>
+
+                <!-- Map for Christ University, Yeshwanthpur Campus -->
+                <div class="step-container step">
+                    <h3>Yeshwanthpur Campus</h3>
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.2313141492025!2d77.55287401477193!3d13.028201390819024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176f7bb9ed23%3A0x8fd3b6f6db494131!2sChrist%20(Deemed%20to%20be%20University)%2C%20Delhi%20NCR%20Off%20Campus%20-%20Yeshwanthpur!5e0!3m2!1sen!2sin!4v1697574008363!5m2!1sen!2sin"
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+                </div>
+                
+            </div>
+            <div class="content-box">
+                <h2>Additional Information</h2>
+                <p>Christ University, founded in 1969, has been recognized for its academic excellence and quality education. The university emphasizes holistic development, providing students with numerous opportunities for personal and professional growth.</p>
+                <p>With a vibrant campus life, students engage in various extracurricular activities, including sports, cultural events, and community service initiatives. The university's commitment to research and innovation further enhances its reputation as a leading educational institution.</p>
+                <p>For more details, visit the official <a href="https://www.christuniversity.in/" target="_blank">Christ University website</a>.</p>
+            </div>
+            
+    <!-- Chatbot Integration -->
+    <div class="chatbot-container">
+        <!-- Chatbot icon as an image button -->
+        <img id="chatbot-icon" class="chatbot-button" src="{{ url_for('static', filename='bot.png') }}" alt="Chatbot" />
+
+        <!-- Chatbox Popup -->
+        <div id="chat-popup" class="chat-popup hidden">
+            <div class="chat-header">
+                <h3>Chatbot</h3>
+                <button id="close-btn">✖</button>
+            </div>
+
+            <div class="chat-body">
+                <div id="chat-history"></div>
+                <select id="question-select">
+                    <option value="">Select a question...</option>
+                    <option value="How do I apply to Christ University?">How do I apply to Christ University?</option>
+                    <option value="What is the eligibility for the B.Sc. Computer Science course?">What is the eligibility for the B.Sc. Computer Science course?</option>
+                    <option value="What are the available scholarships?">What are the available scholarships?</option>
+                    <option value="How do I access the student portal?">How do I access the student portal?</option>
+                    <option value="What is the contact email for admissions?">What is the contact email for admissions?</option>
+                </select>
+                <button id="ask-btn">Ask</button>
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='bot.js') }}"></script>
+        </div>
+    </div>
+</body>
+</html>

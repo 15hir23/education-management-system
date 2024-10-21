@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bot.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Scholarship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgba(43, 35, 24, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        li {
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #908282;
+    color: #ffffff;
+            border-radius: 4px;
+            transform: scale(1.05);
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .scholarship-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .scholarship-box {
+            background-color: #A8E6CE; /* Default Light teal */
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            color: #333;
+            width: calc(50% - 20px); /* Two boxes in a row with some margin */
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            box-sizing: border-box; /* Ensures padding is included in width */
+        }
+
+        .scholarship-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .merit {
+            background-color: #C8E6C9; /* Light green */
+        }
+
+        .need {
+            background-color: #FFCCBC; /* Light orange */
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .leadership {
+            background-color: #FFAB91; /* Light coral */
+        }
+
+        .sports {
+            background-color: #FF8A80; /* Light red */
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Styling the logo */
+        nav img {
+            max-height: 50px;
+            margin-left: 20px;  
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Logo on the left -->
+        <img src="static/images/logoeduman_bg.png" alt="Logo">
+
+        <!-- Navigation links on the right -->
+        <ul>
+            <li><a href="/index2">Home</a></li>
+            <li><a href="/manage-results">About</a></li>
+            <li><a href="/admissions">Admissions</a></li>
+            <li><a href="/scholarship">Scholarship</a></li>
+            <li><a href="/examination">Examination</a></li>
+            <li><a href="/login">Results</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Scholarship Opportunities</h1>
+        <p>Explore our various scholarship programs designed to support students who demonstrate academic excellence, leadership skills, and community involvement. Ensure you meet the eligibility criteria before applying.</p>
+        
+        <div class="content-box">
+            <h2>Available Scholarship Programs</h2>
+            <p>We offer several scholarships, including:</p>
+            <div class="scholarship-grid">
+                <div class="scholarship-box merit">
+                    <h3>Merit-Based Scholarships</h3>
+                    <p>Awarded to students with outstanding academic performance.</p>
+                </div>
+                <div class="scholarship-box need">
+                    <h3>Need-Based Scholarships</h3>
+                    <p>Designed for students who demonstrate financial need.</p>
+                </div>
+                <div class="scholarship-box leadership">
+                    <h3>Leadership Scholarships</h3>
+                    <p>For students who have shown exceptional leadership in their schools or communities.</p>
+                </div>
+                <div class="scholarship-box sports">
+                    <h3>Sports Scholarships</h3>
+                    <p>For athletes who excel in their respective sports.</p>
+                </div>
+            </div>
+            <p>Make sure to check the eligibility criteria for each program before applying.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>How to Apply</h2>
+            <p>Follow these steps to apply for a scholarship:</p>
+            <ol>
+                <li><strong>Check Eligibility:</strong> Ensure you meet the requirements for the desired scholarship.</li>
+                <li><strong>Complete the Application Form:</strong> Fill out the online application form available on our website.</li>
+                <li><strong>Submit Required Documents:</strong> Upload your transcripts, ID proof, and any other relevant certificates.</li>
+                <li><strong>Submit Your Application:</strong> Review all details and submit your application.</li>
+            </ol>
+        </div>
+
+        <div class="content-box">
+            <h2>Important Dates</h2>
+            <p>Mark your calendars for the following important dates:</p>
+            <ul>
+                <li><strong>Application Start Date:</strong> January 1, 2024</li>
+                <li><strong>Application Deadline:</strong> March 31, 2024</li>
+                <li><strong>Notification of Awards:</strong> April 15, 2024</li>
+                <li><strong>Start of Academic Year:</strong> August 1, 2024</li>
+            </ul>
+        </div>
+        
+    <!-- Chatbot Integration -->
+    <div class="chatbot-container">
+        <!-- Chatbot icon as an image button -->
+        <img id="chatbot-icon" class="chatbot-button" src="{{ url_for('static', filename='bot.png') }}" alt="Chatbot" />
+
+        <!-- Chatbox Popup -->
+        <div id="chat-popup" class="chat-popup hidden">
+            <div class="chat-header">
+                <h3>Chatbot</h3>
+                <button id="close-btn">✖</button>
+            </div>
+
+            <div class="chat-body">
+                <div id="chat-history"></div>
+                <select id="question-select">
+                    <option value="">Select a question...</option>
+                    <option value="How do I apply to Christ University?">How do I apply to Christ University?</option>
+                    <option value="What is the eligibility for the B.Sc. Computer Science course?">What is the eligibility for the B.Sc. Computer Science course?</option>
+                    <option value="What are the available scholarships?">What are the available scholarships?</option>
+                    <option value="How do I access the student portal?">How do I access the student portal?</option>
+                    <option value="What is the contact email for admissions?">What is the contact email for admissions?</option>
+                </select>
+                <button id="ask-btn">Ask</button>
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='bot.js') }}"></script>
+    </div>
+</body>
+</html>

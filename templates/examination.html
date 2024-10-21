@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bot.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Examination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+    
+        nav {
+            background-color: rgba(43, 35, 24, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            display: inline-block;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #908282;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+        nav img {
+            max-height: 50px;
+            margin-left: 20px;  
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Logo on the left -->
+        <img src="static/images/logoeduman_bg.png" alt="Logo">
+
+        <!-- Navigation links on the right -->
+        <ul>
+            <li><a href="/index2">Home</a></li>
+            <li><a href="/manage-results">About</a></li>
+            <li><a href="/admissions">Admissions</a></li>
+            <li><a href="/scholarship">Scholarship</a></li>
+            <li><a href="/examination">Examination</a></li>
+            <li><a href="/login">Results</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Examination</h1>
+        <p>Get information on examination schedules, instructions, and guidelines for upcoming exams.</p>
+        
+        <div class="content-box">
+            <h2>Examination Schedules</h2>
+            <p>Find the latest exam timetables and guidelines to ensure you are prepared.</p>
+            <ul>
+                <li><strong>Midterm Exams:</strong> March 1 - March 5, 2024</li>
+                <li><strong>Final Exams:</strong> June 1 - June 10, 2024</li>
+                <li><strong>Supplementary Exams:</strong> August 15 - August 20, 2024</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>Exam Instructions</h2>
+            <p>Ensure you are familiar with the following exam instructions:</p>
+            <ol>
+                <li>Arrive at least 30 minutes early to the exam venue.</li>
+                <li>Bring necessary materials: ID, pens, calculators, etc.</li>
+                <li>Follow all instructions provided by the invigilator.</li>
+                <li>No electronic devices are allowed unless specified.</li>
+            </ol>
+        </div>
+
+        <div class="content-box">
+            <h2>Important Dates</h2>
+            <p>Stay updated with these key dates:</p>
+            <ul>
+                <li><strong>Exam Registration Deadline:</strong> February 15, 2024</li>
+                <li><strong>Last Day to Change Exam Centers:</strong> February 25, 2024</li>
+                <li><strong>Results Release Date:</strong> June 15, 2024</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>Contact Us</h2>
+            <p>If you have any questions regarding the exams, please reach out:</p>
+            <p><strong>Email:</strong> exams@example.com</p>
+            <p><strong>Phone:</strong> +1 (234) 567-8902</p>
+        </div>
+        
+    <!-- Chatbot Integration -->
+    <div class="chatbot-container">
+        <!-- Chatbot icon as an image button -->
+        <img id="chatbot-icon" class="chatbot-button" src="{{ url_for('static', filename='bot.png') }}" alt="Chatbot" />
+
+        <!-- Chatbox Popup -->
+        <div id="chat-popup" class="chat-popup hidden">
+            <div class="chat-header">
+                <h3>Chatbot</h3>
+                <button id="close-btn">✖</button>
+            </div>
+
+            <div class="chat-body">
+                <div id="chat-history"></div>
+                <select id="question-select">
+                    <option value="">Select a question...</option>
+                    <option value="How do I apply to Christ University?">How do I apply to Christ University?</option>
+                    <option value="What is the eligibility for the B.Sc. Computer Science course?">What is the eligibility for the B.Sc. Computer Science course?</option>
+                    <option value="What are the available scholarships?">What are the available scholarships?</option>
+                    <option value="How do I access the student portal?">How do I access the student portal?</option>
+                    <option value="What is the contact email for admissions?">What is the contact email for admissions?</option>
+                </select>
+                <button id="ask-btn">Ask</button>
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='bot.js') }}"></script>
+
+    </div>
+</body>
+</html>

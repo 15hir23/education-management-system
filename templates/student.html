@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='student.css') }}">
+    <title>EDUMANS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px; 
+            font-size: 36px; /* Increased font size */
+            font-weight: bold; /* Optional: make the text bold */
+            color: #003366; /* Keep the same color for consistency */
+        }
+
+        nav {
+            margin: 10px 0; /* Reduced padding */
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #003366;
+            margin: 0 10px; /* Reduced spacing */
+            font-size: 16px; /* Reduced font size */
+        }
+
+        nav a:hover {
+            color: #002244; /* Darker Blue on Hover */
+        }
+
+        #home-image {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full height */
+            overflow: hidden;
+        }
+
+        #home-image img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire div */
+            transform: translate(-50%, -50%);
+            filter: blur(5px); /* Apply blur */
+            z-index: 1; /* Send image to the back */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 2; /* Overlay above the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .highlight {
+            font-size: 36px; /* Increased font size for emphasis */
+            font-weight: bold; /* Bold text */
+            color: #ffffff; /* White color */
+            transition: color 0.3s, transform 0.3s; /* Smooth transition */
+            z-index: 3; /* On top of overlay */
+        }
+
+        .highlight:hover {
+            color: #ffcc00; /* Gold color on hover */
+            transform: scale(1.05); /* Slight scaling on hover */
+        }
+
+        .main {
+            padding: 20px; /* Padding for the main content */
+            margin-top: 20px; /* Space from the top */
+            z-index: 4; /* Ensure it appears above other elements */
+            position: relative; /* For proper z-index stacking */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="link-title" href="/">EDUMANS</a>
+        </header>
+        <nav class="Home">
+            <nav class="recbook">
+                <a href="/recbook">Study Materials</a>
+                <a href="/index2">Home</a>
+                <a href="/onlinecourses">Online Courses</a>
+            </nav>
+        </nav>
+        <div id="home-image">
+            <img src="./static/images/bg.jpg" alt="Future Of Education">
+            <div class="overlay">
+                <h1 class="highlight">Smart And Fast Wins the Race</h1>
+            </div>
+        </div>
+        <article class="main">
+            <p>A next generation online learning and collaborations environment
+               Global and Engaging.</p>
+            <p>Next generation learning uses the tools that technology has provided to create a more comprehensive learning system that aims to better educate current and future students. Instead of offering a broadly generic education, next generation learning makes education relevant to each student and flexible.</p>
+        </article>
+        <footer>
+            &copy; EDUMANS &nbsp; <span class="seperator">||</span>
+        </footer>
+    </div>
+</body>
+</html>

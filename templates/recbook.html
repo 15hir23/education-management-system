@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='student.css') }}">
+    <title>EDUMANS</title>
+    <style>
+        button {
+            background-color: #003366; /* Dark Blue */
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Hover Effects */
+        button:hover {
+            background-color: #002244; /* Darker Blue on Hover */
+            transform: scale(1.05); /* Slight scaling */
+        }
+
+        /* Active Button State */
+        button:active {
+            background-color: #001122; /* Even Darker Blue */
+            transform: scale(0.98); /* Slight compression on click */
+        }
+
+    </style> 
+
+</head>
+<body id="recbook">
+    <div class="container">
+        <header class="header">
+            <a class="link-title" href="/">EDUMANS</a>
+        </header>
+
+        <nav class="recbook">
+            <a href="/recbook">Study Materials</a> &nbsp; &nbsp; &nbsp;
+            <a href="/student">Home</a> &nbsp; &nbsp; &nbsp;
+            <a href="/onlinecourses">Online Courses</a>&nbsp; &nbsp; &nbsp;
+        </nav>
+
+        <aside>
+            <h1></h1>
+        </aside>
+    
+        <article class="main">
+            <h1 class="page-heading">Reference Books</h1>  
+            <div id="form">
+                <form action="process.php"></form>
+            </div>
+            <p>
+                <label for="name">First Year</label>
+            </p>
+            
+            <div class="button-container">
+                <a href="./static/images/sem1.png"><button>SEM-I</button></a>
+                <a href="./static/images/sem1.png"><button>SEM-II</button></a>
+            </div>
+            
+            <p>
+                <label for="name">IT Branch</label>
+            </p>
+            <div class="button-container">
+                <a href="./static/images/sem1.png"><button>SEM-III</button></a>
+                <a href="./static/images/sem1.png"><button>SEM-IV</button></a>
+                <a href="./static/images/sem1.png"><button>SEM-V</button></a>
+                <a href="./static/images/sem1.png"><button>SEM-VI</button></a>
+                <a href="./static/images/sem1.png"><button>SEM-VII</button></a>
+                <a href="./static/images/sem1.png"><button>SEM-VIII</button></a>
+            </div>
+                 
+            <p>
+                <a href="Home.html"><button>Back</button></a>
+            </p>
+        </article>
+
+        <footer>
+            &copy; EDUMANS &nbsp; <span class="separator">||</span>
+        </footer>        
+    </div>
+</body>
+</html>

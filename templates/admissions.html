@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bot.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Admissions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgba(43, 35, 24, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        li {
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color:#908282;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .step-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap; /* For better responsiveness */
+        }
+
+        .step {
+            background-color: #D0EFD9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 200px; /* Responsive resizing */
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .arrow {
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: -5rem;
+        }
+
+        .arrow::after {
+            content: '➔';
+            font-size: 24px;
+            color: rgba(75, 61, 42, 0.5);
+            position: absolute;
+            left: 100%;
+            margin-left: 10px;
+        }
+
+        .step:nth-child(1) .arrow::after {
+            display: none;
+        }
+
+        .step:nth-child(1) {
+            background-color: #D1C4E9;
+        }
+        
+        .step:nth-child(2) {
+            background-color: #FFCCBC;
+        }
+
+        .step:nth-child(3) {
+            background-color: #FFE0B2;
+        }
+
+        .step:nth-child(4) {
+            background-color: #FFAB91;
+        }
+
+        .step:nth-child(5) {
+            background-color: #FF8A80;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        nav img {
+            max-height: 50px;
+            margin-left: 20px;
+        }
+
+        .console {
+            background-color: #222;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+            display: none;
+        }
+
+        .console.visible {
+            display: block;
+        }
+
+        .console button {
+            background-color: rgba(75, 61, 42, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .console button:hover {
+            background-color: #5BB0AA;
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .step-container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            ul {
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .step {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            p, a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="static/images/logoeduman_bg.png" alt="Logo">
+        <ul>
+            <li><a href="/index2">Home</a></li>
+            <li><a href="/manage-results">About</a></li>
+            <li><a href="/admissions">Admissions</a></li>
+            <li><a href="/scholarship">Scholarship</a></li>
+            <li><a href="/examination">Examination</a></li>
+            <li><a href="/login">Results</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Admissions</h1>
+        <p>Welcome to the Admissions page! Here, you can apply for admissions, check your application status, and find all necessary information regarding our admission process.</p>
+        
+        <div class="content-box">
+            <h2>How to Apply</h2>
+            <p>To apply for admission, please follow these steps:</p>
+
+            <div class="step-container">
+                <div class="step">
+                    <p><strong>Check Eligibility:</strong> Ensure you meet the eligibility criteria for the desired course.</p>
+                    <div class="arrow"></div>
+                </div>
+                <div class="step">
+                    <p><strong>Complete the Application Form:</strong> Fill out the online application form available on our website.</p>
+                    <div class="arrow"></div>
+                </div>
+                <div class="step">
+                    <p><strong>Submit Required Documents:</strong> Upload necessary documents such as transcripts, ID proof, and other relevant certificates.</p>
+                    <div class="arrow"></div>
+                </div>
+                <div class="step">
+                    <p><strong>Pay the Application Fee:</strong> Make the payment through our secure portal.</p>
+                    <div class="arrow"></div>
+                </div>
+                <div class="step">
+                    <p><strong>Submit Your Application:</strong> Review all details and submit your application.</p>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+
+            <p>After submitting, you can check your admission status on this page.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>Important Dates</h2>
+            <p>Keep track of the following important dates:</p>
+            <ul>
+                <li><strong>Application Start Date:</strong> January 1, 2024</li>
+                <li><strong>Application Deadline:</strong> March 31, 2024</li>
+                <li><strong>Admission Notifications:</strong> April 15, 2024</li>
+                <li><strong>Start of Classes:</strong> August 1, 2024</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further assistance, feel free to reach out to our admissions office:</p>
+            <p><strong>Email:</strong> admissions@example.com</p>
+            <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+        </div>
+
+        <div class="chatbot-container">
+            <img id="chatbot-icon" class="chatbot-button" src="{{ url_for('static', filename='bot.png') }}" alt="Chatbot" />
+
+            <div id="chat-popup" class="chat-popup hidden">
+                <div class="chat-header">
+                    <h3>Chatbot</h3>
+                    <button id="close-btn">✖</button>
+                </div>
+
+                <div class="console" id="console">
+                    <p>Welcome! I'm here to assist you with any admission-related queries.</p>
+                    <button>Ask a Question</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatbotIcon = document.getElementById("chatbot-icon");
+        const chatPopup = document.getElementById("chat-popup");
+        const closeBtn = document.getElementById("close-btn");
+
+        chatbotIcon.addEventListener("click", function() {
+            chatPopup.classList.toggle("hidden");
+        });
+
+        closeBtn.addEventListener("click", function() {
+            chatPopup.classList.add("hidden");
+        });
+    </script>
+</body>
+</html>

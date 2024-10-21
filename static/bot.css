@@ -1,0 +1,152 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chatbot-button {
+    width: 90px; /* Set width to the desired size */
+    height: 90px; /* Set height to the desired size */
+    cursor: pointer;
+    border-radius: 50%; /* Ensure the image is circular */
+}
+
+.chat-popup {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.3s; /* Add animation */
+}
+
+.chat-popup.hidden {
+    display: none;
+}
+
+.chat-header {
+    background-color: #4d3b3d; /* Dark blue color */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+#chat-history {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f9f9f9; /* Light gray background for chat */
+}
+
+.user-message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align user messages to the right */
+    margin: 5px 0;
+}
+
+.bot-message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align bot messages to the left */
+    margin: 5px 0;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+}
+
+.user-message .message-container {
+    flex-direction: row-reverse; /* Place the user image on the right */
+}
+
+.bot-message .message-container {
+    flex-direction: row; /* Keep the bot image on the left */
+}
+
+.user-message img,
+.bot-message img {
+    width: 30px; /* Circle image size */
+    height: 30px; /* Circle image size */
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.user-message-text {
+    background-color: #cdc2c4; /* Light blue background for user message */
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 60%; /* Limit message width */
+}
+
+.bot-message-text {
+    background-color: #f1f1f1; /* Light gray background for bot message */
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 60%; /* Limit message width */
+}
+
+#user-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#send-btn,
+#ask-btn {
+    background-color: #4d3b3d; /* Dark blue color */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#send-btn:hover,
+#ask-btn:hover {
+    background-color: #a79e9f; /* Lighter blue on hover */
+}
+
+#close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

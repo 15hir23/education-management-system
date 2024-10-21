@@ -1,0 +1,903 @@
+body {
+
+    background: url("bg.jpg");
+    margin:0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf2f9;
+
+}
+
+
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: url("back.jpg");
+
+}
+
+.header{
+    
+    padding: 45px 0 20px 40px;
+}
+
+.Home {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.Home a {
+    
+    color: #c4dbf2;;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.Home a:hover {
+    
+    color: beige
+}
+
+aside {
+    text-align: left;    
+    float: left;
+    width: 120px;
+    padding: 30px 0 0 40px;
+    margin: 20px o 5px 0;
+    border-color: #c4dbf2;;
+    color: #004080;
+}
+
+#home-image img{
+    
+    align-content: left;
+    width: 40%;
+    float: center;
+
+}
+
+/*Login Page*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+#Login {
+
+	text-decoration: dotted;
+	font-size: 20px;
+	border-color: black;
+	color: #004080;
+	width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#recbook {
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+.recbook {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.recbook a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.recbook a:hover {
+    
+    color: beige
+}
+
+/*Live Lecture*/
+
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#livelecture {
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+.livelecture {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.livelecture a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.livelecture a:hover {
+    
+    color: beige
+}
+
+/*SignUp*/
+
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#onlinecourses
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.onlinecourses {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.onlinecourses a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.onlinecourses a:hover {
+    
+    color: beige
+}
+
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#branch
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.branch {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.branch a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.branch a:hover {
+    
+    color: beige
+}
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#fe
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.fe {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.fe a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.fe a:hover {
+    
+    color: beige
+}
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#itsem3
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.itsem3 {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.itsem3 a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.itsem3 a:hover {
+    
+    color: beige
+}
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#itsem4
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.itsem4 {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.itsem4 a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.itsem4 a:hover {
+    
+    color: beige
+}
+
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#selectyear
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.selectyear {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.selectyear a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: fantasy;
+    
+}
+
+.selectyear a:hover {
+    
+    color: beige
+}
+
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#sem1
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.sem1 {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.sem1 a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: fantasy;
+    
+}
+
+.sem1 a:hover {
+    
+    color: beige
+}
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#sem2
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.sem2 {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.sem2 a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: fantasy;
+    
+}
+
+.sem2 a:hover {
+    
+    color: beige
+}
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#sesub
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.sesub {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.sesub a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: fantasy;
+    
+}
+
+.sesub a:hover {
+    
+    color: beige
+}
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#tesub
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.tesub {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.tesub a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: fantasy;
+    
+}
+
+.tesub a:hover {
+    
+    color: beige
+}
+
+/*Online Courses*/
+.link-title {
+    
+    text-decoration: wavy;
+    font-size: 40px;
+    color: #004080;
+    text-align: right;
+    align-content: right;   
+
+
+}
+
+.container {
+    
+    
+    margin: 0 auto;
+    background: lightcyan;
+
+}
+
+#video
+{
+
+    text-decoration: dotted;
+    font-size: 20px;
+    border-color: black;
+    color: #004080;
+    width: 2000px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    padding: 45px 0 20px 40px;
+    border-radius: 5px;
+
+
+}
+
+
+
+
+
+.video {
+    
+    background: #004080;
+    padding: 6px 0 6px 40px;
+}
+
+.video a {
+    
+    color: #c4dbf2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: fantasy;
+    
+}
+
+.video a:hover {
+    
+    color: beige
+}
